@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form tag we always use when we use input tags -->
+    <form>
+        <!-- label we use to display the text  -->
+        <label for ="fname">First name</label>&nbsp;
+        <input type="text" name="fname">
+<!-- this br tag is used for the separation of label -->
+        <br><br>
+    <!-- we can give space between label and input tag by &nbsp; feature -->
+        <label for ="lname">Last name</label>&nbsp;
+        <input type ="text" name="lname">
+        <br><br>
+
+        <!-- To make the password label we have done the below syntax  -->
+        <label for="userpassword">Password</label>&nbsp;
+        <input type="password" name="userpassword">
+        <br>
+
+        <!-- This is the below syntax to submit the all above login details which I have made till now -->
+        <input type="submit" value="submit">
+
+        <!-- To reset the data we use the reset in input -->
+        <input type="reset" value="reset">
+        <br>
+        <br>
+        <br>
+
+        <p>what is you gender?</p>
+<!-- this below syntax is for Radio button only -->
+        <input type="radio" name="gender" value="male">
+        <label>male</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" value="female">
+        <label>female</label>
+        <br>
+        <br>
+        <br>
+
+        <!-- The below syntax for checkbox input button  -->
+        <p>what is your hobby?</p>
+        <input type="checkbox" name="hobby1" value="Reading">
+        <label>Reading</label><br>
+        <input type="checkbox" name="hobby2" value="Writing">
+        <label>Writing</label>
+        <br><br>
+
+    <!-- Input tag button syntax below -->
+    <input type="button" value="Click Me" onclick="alert('Some task is done')">
+    <!-- (Above onclick alert is an JS parameter we use it to show any alert on the browser) -->
+<br><br>
+
+<!-- color input type syntax -->
+     <input type="color" name="bgcolor" value="#ffffff">
+     <br><br>
+     <!-- input type date -->
+
+     <input type="date" name="dob" max="2023-11-10">
+     <!-- max means we cannot select the date after the mentioned max date -->
+<!-- Input type file syntax to select the file on browser from loacl system -->
+
+<input type="file" name="myfile"
+accept=".pdf">     
+<!-- input type month syntax -->
+<input type="month" min="2023-10">
+<!-- 
+input type time -->
+
+<input type="time" value="12:30">
+<br><br>
+
+<!-- input type date and time together -->
+
+<input type="datetime-local">
+
+<input type="week" value="2023-w10">
+
+<!-- input tag numbers and step means ki kitne steps ek baar me show krega-->
+
+<input type="number" value="10" min="4" max="20" step="3">
+<br>
+
+<!-- input tag Range -->
+
+<label">Select your age</label>
+<input type="range" min="10" max="120" value="20" step="1">
+    </form>
+</body>
+</html>
